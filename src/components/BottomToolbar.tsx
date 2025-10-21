@@ -4,15 +4,13 @@ interface BottomToolbarProps {
   onToggleTodo: () => void
   onToggleCalendar: () => void
   totalSessionMinutes: number
+  onToggleMusic: () => void
 }
 
-function BottomToolbar({ onToggleTodo, onToggleCalendar, totalSessionMinutes }: BottomToolbarProps) {
+function BottomToolbar({ onToggleTodo, onToggleCalendar, totalSessionMinutes, onToggleMusic }: BottomToolbarProps) {
   return (
     <div className="bottom-toolbar">
       <div className="toolbar-left">
-        <button className="toolbar-btn">
-          <span className="toolbar-icon">🏠</span>
-        </button>
         <button className="toolbar-btn active">
           <span className="toolbar-icon">⏱️</span>
         </button>
@@ -29,14 +27,8 @@ function BottomToolbar({ onToggleTodo, onToggleCalendar, totalSessionMinutes }: 
         <button className="toolbar-btn" onClick={onToggleTodo}>
           <span className="toolbar-icon">✏️</span>
         </button>
-        <button className="toolbar-btn">
+        <button className="toolbar-btn" onClick={onToggleMusic}>
           <span className="toolbar-icon">🎵</span>
-        </button>
-        <button className="toolbar-btn">
-          <span className="toolbar-icon">🔔</span>
-        </button>
-        <button className="toolbar-btn">
-          <span className="toolbar-icon">😊</span>
         </button>
         <button className="toolbar-btn add-btn">
           <span className="toolbar-icon">+</span>

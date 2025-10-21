@@ -1,12 +1,12 @@
 .todo-list {
   position: absolute;
-  top: calc(100% + 100px);
+  top: calc(100% + 25px);
   left: 50%;
   transform: translateX(-50%);
   background: white;
   border-radius: 16px;
   padding: 1.5rem;
-  width: 400px;
+  width: 350px;
   max-height: 500px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   display: flex;

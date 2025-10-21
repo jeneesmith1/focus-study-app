@@ -4,12 +4,14 @@ import ShuffleSpaces from './components/ShuffleSpaces'
 import BottomToolbar from './components/BottomToolbar'
 import TodoList, { Todo } from './components/TodoList'
 import DayCalendar from './components/DayCalendar'
+import MusicPlayer from './components/MusicPlayer'
 import './App.css'
 
 function App() {
   const [showTodoList, setShowTodoList] = useState(true)
   const [showCalendar, setShowCalendar] = useState(false)
-  const [currentBackground, setCurrentBackground] = useState('flower')
+  const [showMusic, setShowMusic] = useState(false)
+  const [currentBackground, setCurrentBackground] = useState('car')
   const [totalSessionMinutes, setTotalSessionMinutes] = useState(0)
   const [todos, setTodos] = useState<Todo[]>([])
 
@@ -85,9 +87,12 @@ function App() {
         </div>
       </div>
 
+      {showMusic && <MusicPlayer onClose={() => setShowMusic(false)} />}
+
       <BottomToolbar
         onToggleTodo={() => setShowTodoList(!showTodoList)}
         onToggleCalendar={() => setShowCalendar(!showCalendar)}
+        onToggleMusic={() => setShowMusic(!showMusic)}
         totalSessionMinutes={totalSessionMinutes}
       />
     </div>

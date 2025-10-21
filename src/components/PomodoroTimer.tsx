@@ -95,13 +95,6 @@ function PomodoroTimer({ onSessionTimeUpdate }: PomodoroTimerProps) {
           <option>Work</option>
           <option>Study</option>
         </select>
-        <div className="timer-dots">
-          <span className={mode === 'work' ? 'active' : ''}></span>
-          <span className={mode === 'break' ? 'active' : ''}></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <button className="minimize-btn">−</button>
       </div>
 
