@@ -2,7 +2,7 @@
 
 A React + TypeScript application for managing focus and study sessions with integrated task scheduling and time tracking.
 
-![Focus Study App](./thumbnail.jpg)
+![Focus Study App](./screenshot.png)
 
 ## Features
 
