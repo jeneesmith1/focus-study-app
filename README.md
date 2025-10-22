@@ -1,6 +1,6 @@
 # Focus Study App
 
-A React + TypeScript application for managing focus and study sessions with integrated task scheduling and time tracking.
+This app was an adventure in vibe coding. I wanted to try creating an app like LifeAt.io and Claude did a fairly good job, all things considered.
 
 ![Focus Study App](./screenshot.png)
 
